@@ -10,3 +10,6 @@ class ArrModel(BaseModel):
     class Config:
         alias_generator = to_camel
         allow_population_by_field_name = True
+
+    def __getitem__(self, item):
+        return getattr(self, item)
