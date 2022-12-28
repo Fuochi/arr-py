@@ -1,13 +1,19 @@
 [project]
 name = "arr-py"
-version = "0.1.1"
-
+version = "0.0.1"
 dependencies = [
     "requests>=2.28.1",
-    "pydantic>=1.10.2"
+    "pydantic>=1.10.2",
 ]
-
 description = "Basic API wrapper and utility for the arr world"
 readme = "README.md"
 requires-python = ">=3.7"
-dynamic = ["version"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/devopsarr/arr-py"
+"Bug Tracker" = "https://github.com/devopsarr/arr-py/issues"
